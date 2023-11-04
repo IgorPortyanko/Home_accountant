@@ -1,0 +1,307 @@
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+.App{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.layout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+} 
+
+/* ///// Layout ////////////////////////////////*/
+
+.layout-main-container{
+    width: 100%;
+    flex: 1 1 auto;
+    display: flex;
+
+}
+
+.outlet{
+    width: 100%;
+    margin: 120px 0 0 300px;
+
+}
+
+/* /////             //////////////////// */
+
+.income-page{
+    width: 100%;
+}
+
+.pages-title{
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+    font-size: 60px;
+    text-align: center;
+    color: green;
+    font-weight: 700;
+    position: fixed;
+    top: 120px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.pages-title-sort-button{
+    margin-left: 20px;
+    width: 160px;
+    height: 60px;
+    background-color: rgb(150, 150, 134);
+    border-radius: 6px;
+    font-size: 28px;
+    line-height: 26px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ////  period-modal-form  /////// */
+
+.period-modal-form{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to bottom, #b0c6f0, #adeec6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.period-modal-form input{
+    width: 170px;
+    height: 40px;
+    border-bottom: solid 1px black;
+    background-color: inherit;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.period-modal-form-battons-div{
+    width: 170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.period-modal-form button{
+    width: 80px;
+    height: 40px;
+    display: inline-block;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background-color: inherit;
+    border: solid 1px black;
+}
+
+/* //// statistic modal  ////////////// */
+
+.statistic-modal-container{
+    width: 500px;
+    background-color: rgb(13, 214, 23);
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: auto;
+}
+
+.statistic-modal-title{
+    padding-bottom: 10px;
+}
+
+.statistic-modal-list-item{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #cef0c9, #93b19f);
+    font-size: 24px;
+    font-weight: 500;
+    padding: 4px 8px;
+}
+
+/* ////           ////////////// */
+
+.income-nav-btn{
+    width: 180px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: rgb(197, 5, 5);
+    border-radius: 10px;
+    transition: box-shadow 0.1s ease;
+    
+}
+
+.income-nav-btn:hover{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgb(133, 233, 41);
+}
+
+.income-nav-btn:active{
+    box-shadow: none;
+    transform: translateY(1px);
+}
+
+.income-list{
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* /// item ///////////////////// */
+
+.item-container{
+    background: linear-gradient(to bottom, #c4bcb1, #dad3c9);
+    padding: 0px 10px;
+}
+
+.income-item{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    
+}
+
+.income-item-date{
+    width: 15%;
+}
+
+.income-item-sum{
+    width: 10%;
+    font-weight: 500;
+}
+
+.red-text{
+    color: red;
+}
+
+.green-text{
+    color: green;
+}
+
+.item-description{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.item-description-text{
+    flex-basis: 70%;
+    padding-bottom: 10px;
+    line-height: 24px;
+}
+
+.item-description-buttons-div{
+    display: flex;
+}
+
+.item-description-buttons-div button{
+    background-color: inherit;
+    font-size: 20px;
+    margin-right: 20px;
+    display: block;
+    width: 120px;
+}
+
+
+/* //////////////////////// */
+
+.income-form-modal{
+    width: 400px;
+    height: 500px;
+    background-color:rgb(175, 172, 170);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.form-new-transaction{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-lable-p{
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.input-in-form input, select{
+    width: 180px;
+    height: 30px;
+    border: solid 1px black;
+    font-size: 18px;
+}
+
+.income-form-description textarea{
+    border: solid 1px black;
+}
+
+.close-molal-button-div button{
+    width: 140px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    border: solid 1px black;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.submit-modal-button-div{
+    /* flex: 1 1 auto; */
+    display: flex;
+    justify-content:space-between;
+    align-items: end;
+    height: 45px;
+}
+
+.submit-modal-button-div button{
+    width: 140px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    border: solid 1px black;
+    border-radius: 10px;
+    display: inline-block;
+}
